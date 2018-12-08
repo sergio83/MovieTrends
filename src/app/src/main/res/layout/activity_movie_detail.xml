@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:fresco="http://schemas.android.com/tools"
+        android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movie_item_height"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary"
+                android:fitsSystemWindows="true"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleMarginEnd="64dp">
+
+            <com.billboard.movies.utils.TranslateDraweeView
+                    android:id="@+id/bannerImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:transitionName="@string/banner_transition_name"
+                    android:background="@color/colorBackground"
+                    android:fitsSystemWindows="true"
+                    fresco:fadeDuration="300"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:placeholderImage="@drawable/movie_placeholder_black"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    app:layout_collapseMode="parallax"/>
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:layout_collapseMode="pin" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <include
+                    android:id="@+id/content"
+                    layout="@layout/content_movie_detail_view"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:background="@color/colorWhite"
+            app:layout_anchor="@id/appBar"
+            app:layout_anchorGravity="bottom|left|start"
+            android:layout_marginStart="@dimen/margin_x16"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/posterImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_x4"
+                fresco:fadeDuration="300"
+                android:background="@color/colorBackground"
+                fresco:actualImageScaleType="focusCrop"
+                fresco:placeholderImage="@drawable/movie_placeholder_black"
+                fresco:placeholderImageScaleType="fitCenter"/>
+
+    </RelativeLayout>
+
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            app:layout_anchor="@id/appBar"
+            app:layout_anchorGravity="bottom|right|end"
+            style="@style/FabStyle"/>
+-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

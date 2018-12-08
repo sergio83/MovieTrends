@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.DefaultActivity">
+        <item name="android:windowEnterTransition">@transition/default_window_fade</item>
+        <item name="android:windowExitTransition">@transition/default_window_fade</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="TextAppearance.MaterialComponents.Headline7" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.0125</item>
+    </style>
+
+    <style name="TextAppearance.MaterialComponents.Headline8" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="MovieDetailTitle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline8</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:layout_marginStart">@dimen/margin_x16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_x16</item>
+        <item name="android:paddingTop">@dimen/margin_x16</item>
+        <item name="android:paddingBottom">@dimen/margin_x4</item>
+
+    </style>
+
+    <style name="MovieDetailValue" >
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:layout_marginStart">@dimen/margin_x16</item>
+        <item name="android:layout_marginEnd">@dimen/margin_x16</item>
+    </style>
+
+</resources>

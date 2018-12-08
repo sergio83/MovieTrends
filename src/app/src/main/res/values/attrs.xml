@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PopularityView">
+        <attr name="percentage" format="integer" />
+        <attr name="stroke" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="lowPopularitycolor" format="color"/>
+        <attr name="mediumPopularityColor" format="color"/>
+        <attr name="hightPopularityColor" format="color"/>
+        <attr name="innerBackgroundColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+</resources>

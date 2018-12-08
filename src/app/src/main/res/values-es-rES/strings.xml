@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Trends</string>
+    <string name="no_internet">¡Parece que no hay Internet!</string>
+    <string name="no_internet_detail">navegando.</string>
+    <string name="retry">Reintentar</string>
+    <string name="no_movies">¡Aquí encontrarás los últimos estrenos de cine!</string>
+    <string name="banner_transition_name">banner</string>
+    <string name="summary_title">Sinopsis:</string>
+    <string name="videos_title">Trailer:</string>
+    <string name="cast_title">Actores principales:</string>
+    <string name="genre_title">Géneros:</string>
+    <string name="status_title">Estatus:</string>
+    <string name="budge_title">Presupuesto:</string>
+    <string name="language_title">Lenguaje Original:</string>
+    <string name="runtime_title">Duración</string>
+    <string name="settings">Configuracion</string>
+    <string name="setting_language">Seleccione un lenguaje:</string>
+    <string name="en">Ingles</string>
+    <string name="es">Español</string>
+    <string name="error">Error</string>
+    <string name="error_keys">Agregue TheMovieDb y Youtube ApiKeys en build.gradle</string>
+    <string name="ok">OK</string>
+</resources>

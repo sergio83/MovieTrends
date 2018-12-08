@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHeaderBackground"
+            android:paddingTop="@dimen/margin_x16"
+            android:paddingBottom="@dimen/margin_x16"
+            android:paddingLeft="@dimen/margin_x16"
+            android:paddingRight="@dimen/margin_x16"
+            android:layout_gravity="bottom"
+            android:layout_alignParentTop="true">
+
+        <com.billboard.movies.ui.view.PopularityView
+                android:id="@+id/popularityView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                app:percentage="100"
+                app:stroke="5dp"
+                app:padding="3dp"
+                app:lowPopularitycolor="@color/colorRed"
+                app:mediumPopularityColor="@color/colorYellow"
+                app:hightPopularityColor="@color/colorGreen"
+                app:innerBackgroundColor="@color/colorBlack"
+                app:textSize="13sp"
+                app:textColor="@color/colorWhite"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_centerVertical="true"
+                      android:layout_toEndOf="@+id/popularityView"
+                      android:layout_marginStart="@dimen/margin_x8">
+            <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline7"
+                    android:textColor="@color/colorTextPrimary"/>
+            <TextView
+                    android:id="@+id/subtitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/colorTextSecondary"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/summaryTitleTextView"
+            style="@style/MovieDetailTitle"
+            android:paddingTop="0dp"
+            android:layout_below="@+id/header"
+            android:text="@string/summary_title"/>
+
+    <TextView
+            android:id="@+id/summaryTextView"
+            style="@style/MovieDetailValue"
+            android:layout_below="@+id/summaryTitleTextView"/>
+
+    <LinearLayout
+            android:id="@+id/detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/summaryTextView"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+            <TextView
+                    style="@style/MovieDetailTitle"
+                    android:text="@string/status_title"/>
+
+            <TextView
+                    android:id="@+id/statusTextView"
+                    style="@style/MovieDetailValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <TextView
+                    style="@style/MovieDetailTitle"
+                    android:text="@string/runtime_title"/>
+
+            <TextView
+                    android:id="@+id/durationTextView"
+                    style="@style/MovieDetailValue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/detail1"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <TextView
+                    style="@style/MovieDetailTitle"
+                    android:text="@string/budge_title"/>
+
+            <TextView
+                    android:id="@+id/budgeTextView"
+                    style="@style/MovieDetailValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <TextView
+                    style="@style/MovieDetailTitle"
+                    android:text="@string/language_title"/>
+
+            <TextView
+                    android:id="@+id/languageTextView"
+                    style="@style/MovieDetailValue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/genresTitleTextView"
+            style="@style/MovieDetailTitle"
+            android:layout_below="@+id/detail2"
+            android:text="@string/genre_title"/>
+
+
+    <com.google.android.material.chip.ChipGroup
+            android:id="@+id/genresChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_x8"
+            android:paddingStart="@dimen/margin_x16"
+            android:paddingEnd="@dimen/margin_x16"
+            app:chipSpacingHorizontal="@dimen/margin_x8"
+            app:chipSpacingVertical="@dimen/margin_x8"
+            android:layout_below="@+id/genresTitleTextView">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+            android:id="@+id/castTitleTextView"
+            style="@style/MovieDetailTitle"
+            android:layout_below="@+id/genresChipGroup"
+            android:text="@string/cast_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/castRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/castTitleTextView"
+            android:layout_marginStart="@dimen/margin_x8"
+            android:layout_marginEnd="@dimen/margin_x8"/>
+
+    <LinearLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/castRecyclerView"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/videosTitleTextView"
+                style="@style/MovieDetailTitle"
+                android:text="@string/videos_title"/>
+
+        <fragment
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:id="@+id/youtubeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_x16"
+                android:layout_marginEnd="@dimen/margin_x16"
+                android:layout_marginBottom="@dimen/margin_x16"/>
+    </LinearLayout>
+
+</RelativeLayout>
