@@ -152,8 +152,17 @@ Menu files do not need to be prefixed with the menu_ prefix. This is because the
 
 #### 1.2.2.4 Values Files
 
-All resource file names should be plural, for example:
+Resources should be split up into the following key files and folders:
 
-	attrs.xml, strings.xml, styles.xml, colors.xml, dimens.xml
+| Name         | Path                      | Description |
+| --------     | -----------               | ----------- |
+| XML Layouts  | `res/layout/`             | This is where we put our XML layout files.     |
+| XML Menus    | `res/menu/`               | This is where we put our AppBar menu actions.  |
+| Drawables    | `res/drawable`            | This is where we put images and XML drawables. | 
+| Colors       | `res/values/colors.xml`   | This is where we put [color definitions](http://developer.android.com/guide/topics/resources/more-resources.html#Color). |
+| Dimensions   | `res/values/dimens.xml`   | This is where we put [dimension values](http://developer.android.com/guide/topics/resources/more-resources.html#Dimension). | 
+| Strings      | `res/values/strings.xml`  | This is where we put strings.           |
+| Styles       | `res/values/styles.xml`   | This is where we put style values.      |
+| Styles       | `res/values/attrs.xml`   | This is where we put attributes values.      |
 
 
