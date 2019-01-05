@@ -20,11 +20,24 @@ The project should maintain the following structure:
 #### 1.1.1 data
 The data package contains any classes (and child packages) that are directly related to any kind of data or data management used within the app — be it networking classes and interfaces, preferences management, database classes, data models, network request and response model, or anything else directly tied to app data. Within this package we also have child packages that are organized per-type.
 
+	src/data/local
+	src/data/remote
+	src/data/repository
+	
+	
 #### 1.1.2 domain
-The Domain layer contains the business logic, controllers and the models that define the entities used within the app.
+The Domain layer contains the business logic, controllers and the models that define the entities used within the app. Within this package we also have child packages that are organized per-type.
 
+	src/domain/gateway
+	src/domain/model
+	
+	
 #### 1.1.3 presentation
 The presentation package is responsible for holding any classes that are related to the UI components of the application. Within this package we also have child packages that are organized per-feature.
+
+	src/presentation/di
+	src/presentation/ui
+	src/presentation/utils
 
 
 
