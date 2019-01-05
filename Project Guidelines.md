@@ -34,9 +34,13 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/local/sharedPreference	
 	
 **remote** - The Remote package contains the implementation for the remote data source.
+	
+	src/data/remote/model
+	src/data/remote/api
+	
+**repository** - The Repository package contains the classes or components that encapsulate the logic required to access data sources.
 
-
-
+	
 #### 1.1.2 domain
 The Domain layer contains the business logic, controllers and the models that define the entities used within the app. Within this package we also have child packages that are organized per-type.
 
