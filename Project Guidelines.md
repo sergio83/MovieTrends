@@ -25,6 +25,18 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/repository
 	
 	
+**local** - The local package contains all of the classes that deal with data being persisted locally to the application. 
+
+	src/data/local/converter
+	src/data/local/dao
+	src/data/local/database
+	src/data/local/entity
+	src/data/local/sharedPreference	
+	
+**remote** - The Remote package contains the implementation for the remote data source.
+
+
+
 #### 1.1.2 domain
 The Domain layer contains the business logic, controllers and the models that define the entities used within the app. Within this package we also have child packages that are organized per-type.
 
