@@ -68,12 +68,10 @@ The presentation package is responsible for holding any classes that are related
 	src/presentation/ui/common
 	src/presentation/ui/featureX
 	
-**base**
+**base** - The base package is used to hold any base classes that can be extended by other classes within the UI package. For example, we have BaseActivity and BaseFragment classes which are used to hold common logic for the activities and fragment used by our app, meaning we don’t have to repeat the same code over and over for each new activity or fragment that we create.
 
-The base package is used to hold any base classes that can be extended by other classes within the UI package. For example, we have BaseActivity and BaseFragment classes which are used to hold common logic for the activities and fragment used by our app, meaning we don’t have to repeat the same code over and over for each new activity or fragment that we create.
+**common** - The common package is used to hold any classes that may be used across the different features within the UI package. For example, we have general ErrorView and RefreshingView classes that are shared across several different screens, so placing this inside a common package feels natural.
 
-**common**
-The common package is used to hold any classes that may be used across the different features within the UI package. For example, we have general ErrorView and RefreshingView classes that are shared across several different screens, so placing this inside a common package feels natural.
 
 ### 1.2 File Naming
 
