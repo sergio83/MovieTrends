@@ -163,6 +163,6 @@ Resources should be split up into the following key files and folders:
 | Dimensions   | `res/values/dimens.xml`   | This is where we put [dimension values](http://developer.android.com/guide/topics/resources/more-resources.html#Dimension). | 
 | Strings      | `res/values/strings.xml`  | This is where we put strings.           |
 | Styles       | `res/values/styles.xml`   | This is where we put style values.      |
-| Styles       | `res/values/attrs.xml`   | This is where we put attributes values.      |
+| Styles       | `res/values/attrs.xml`   | This is where we define custom attributes.      |
 
 
