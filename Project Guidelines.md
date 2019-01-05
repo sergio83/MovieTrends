@@ -1,31 +1,28 @@
-# Android Project Guidelines
+# Project Guidelines
 ---------------------------
 
-The aim of this document is to define project guidelines. These should be followed throughout the Android project in order to help us to keep our code base clean and consistent. A lot of this will be enforced by code quality checks through Jenkins, but it's important to be mindful of the things that may not be picked up 🙂
+The aim of this document is to define project guidelines. These should be followed throughout the Android project in order to help us to keep our code base clean and consistent.
 
 
 ## 1. Project Guidelines
 
 ### 1.1 Project Structure
 
-When contributing work, the project should maintain the following structure:
+The project should maintain the following structure:
 
 
 
-	src/androidTest
-	src/test
-	src/commonTest
-	src/main
+	src/data
+	src/domain
+	src/presentation
 
 
-**androidTest** - Directory containing functional tests    
-**test** - Directory containing unit tests  
-**commonTest** - Directory containing shared test code for AndroidTest & Test  
-**main** - Directory containing application code
+**data** - The data package contains any classes (and child packages) that are directly related to any kind of data or data management used within the app — be it networking classes and interfaces, preferences management, database classes, data models, network request and response model, or anything else directly tied to app data. Within this package we also have child packages that are organized per-type.
 
-The structure of the project should remain as defined above whenever you are modifying or adding new features.
+**domain** - The Domain layer contains the business logic, controllers and the models that define the entities used within the app.
 
-Using this structure allows us to keep the application code separated from any test-related code. The CommonTest directory allows us to share classes between the functional and unit tests, such as mock model creation and dagger test configuration classes.
+**presentation** - The presentation package is responsible for holding any classes that are related to the UI components of the application. Within this package we also have child packages that are organized per-feature.
+
 
 
 ### 1.2 File Naming
