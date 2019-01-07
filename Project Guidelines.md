@@ -24,7 +24,7 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/repository
 	
 	
-### 1.1 **local** - 
+### * **local** - 
 The local package contains all of the classes that deal with data being persisted locally to the application. 
 
 	src/data/local/converter
