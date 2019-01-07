@@ -1,16 +1,24 @@
-# Project Guidelines
+# 1. Project Architecture
 ---------------------------
-
-
-
-The aim of this document is to define project guidelines. These should be followed throughout the Android project in order to help us to keep our code base clean and consistent.
-
-
-## 1. Project Guidelines
 
 <h3 align="center">
     <img src="art/architecture.png" alt="Architecture" />
 </h3>
+
+
+# 2. Project Structure
+---------------------------
+
+
+# 3. Project Guidelines
+---------------------------
+
+
+
+
+
+## 1. Project Guidelines
+
 
 ### 1.1 Project Structure
 
