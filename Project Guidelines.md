@@ -24,7 +24,7 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/repository
 	
 	
-### * **local** - 
+### local
 The local package contains all of the classes that deal with data being persisted locally to the application. 
 
 	src/data/local/converter
@@ -33,13 +33,13 @@ The local package contains all of the classes that deal with data being persiste
 	src/data/local/entity
 	src/data/local/sharedPreference	
 	
-### 1.2 **remote** - 
+### remote
 The Remote package contains the implementation for the remote data source.
 	
 	src/data/remote/model
 	src/data/remote/api
 	
-### 1.3 **repository** - 
+### repository
 The Repository package contains the classes or components that encapsulate the logic required to access data sources.
 
 	
@@ -58,23 +58,28 @@ The presentation package is responsible for holding any classes that are related
 	src/presentation/ui
 	src/presentation/utils
 
-**di** - The injection package holds all of our dependency injection classes.
+### di
+The injection package holds all of our dependency injection classes.
 
 	src/presentation/di/base
 	src/presentation/di/module
 	src/presentation/di/component
 		
-**ui** - Contains all of UI related components — such as Views, Activities, Fragments, ViewModels, etc. 
+### ui
+Contains all of UI related components — such as Views, Activities, Fragments, ViewModels, etc. 
 
 	src/presentation/ui/base
 	src/presentation/ui/common
 	src/presentation/ui/featureX
 	
-**base** - The base package is used to hold any base classes that can be extended by other classes within the UI package. For example, we have BaseActivity and BaseFragment classes which are used to hold common logic for the activities and fragment used by our app, meaning we don’t have to repeat the same code over and over for each new activity or fragment that we create.
+### base
+The base package is used to hold any base classes that can be extended by other classes within the UI package. For example, we have BaseActivity and BaseFragment classes which are used to hold common logic for the activities and fragment used by our app, meaning we don’t have to repeat the same code over and over for each new activity or fragment that we create.
 
-**common** - The common package is used to hold any classes that may be used across the different features within the UI package. For example, we have general ErrorView and RefreshingView classes that are shared across several different screens, so placing this inside a common package feels natural.
+### common
+The common package is used to hold any classes that may be used across the different features within the UI package. For example, we have general ErrorView and RefreshingView classes that are shared across several different screens, so placing this inside a common package feels natural.
 
-**feature** - The feature package is used to hold any classes related to a feature. Within this package we also have child packages that are organized per-type.
+### feature
+The feature package is used to hold any classes related to a feature. Within this package we also have child packages that are organized per-type.
 
 
 ---------------------------
