@@ -6,11 +6,11 @@ To start, consider the following diagram, which shows how all the modules should
     <img src="art/architecture.png" alt="Architecture" />
 </h3>
 
-<hr />
-<h4 align="center">
+
+<h4>
   For more details check out the <a href="https://developer.android.com/jetpack/docs/guide">Guide to app architecture</a>
 </h4>
-<hr />
+
 
 
 ---------------------------
