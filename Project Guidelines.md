@@ -1,4 +1,4 @@
-# 1. Project Architecture
+# Project Architecture
 ---------------------------
 
 <h3 align="center">
@@ -6,21 +6,8 @@
 </h3>
 
 
-# 2. Project Structure
+# Project Structure
 ---------------------------
-
-
-# 3. Project Guidelines
----------------------------
-
-
-
-
-
-## 1. Project Guidelines
-
-
-### 1.1 Project Structure
 
 The project should maintain the following structure:
 
@@ -31,7 +18,7 @@ The project should maintain the following structure:
 	src/presentation
 
 
-#### 1.1.1 data
+## 1. data
 The data package contains any classes (and child packages) that are directly related to any kind of data or data management used within the app — be it networking classes and interfaces, preferences management, database classes, data models, network request and response model, or anything else directly tied to app data. Within this package we also have child packages that are organized per-type.
 
 	src/data/local
@@ -55,7 +42,7 @@ The data package contains any classes (and child packages) that are directly rel
 **repository** - The Repository package contains the classes or components that encapsulate the logic required to access data sources.
 
 	
-#### 1.1.2 domain
+## 2. domain
 The Domain layer contains the business logic, controllers and the models that define the entities used within the app. Within this package we also have child packages that are organized per-type.
 
 	src/domain/gateway
@@ -63,7 +50,7 @@ The Domain layer contains the business logic, controllers and the models that de
 	src/domain/model
 	
 	
-#### 1.1.3 presentation
+## 3. presentation
 The presentation package is responsible for holding any classes that are related to the UI components of the application. Within this package we also have child packages that are organized per-feature.
 
 	src/presentation/di
@@ -89,9 +76,12 @@ The presentation package is responsible for holding any classes that are related
 **feature** - The feature package is used to hold any classes related to a feature. Within this package we also have child packages that are organized per-type.
 
 
-### 1.2 File Naming
+# Project Guidelines
+---------------------------
 
-#### 1.2.1 Class Files
+## 1. File Naming
+
+### 1.2 Class Files
 
 Any classes that you define should be named using UpperCamelCase, for example:
 
@@ -102,7 +92,7 @@ Any classes extending an Android framework component should **always** end with 
 
 	UserFragment, SignUpActivity, RateAppDialog, PushNotificationServer, NumberView
 
-#### 1.2.1 Resource Files
+### 1.3 Resource Files
 
 When naming resource files you should be sure to name them using lowercase letters and underscores instead of spaces, for example:
 
@@ -111,7 +101,7 @@ When naming resource files you should be sure to name them using lowercase lette
 This convention again makes it really easy to locate the specific layout file that you're looking for. Within android studio, the layout package is sorted in alphabetical order meaning that activity, fragment and other layout types becomes grouped - so you know where to begin looking for a file. Other than this, beginning the file name with the component name makes it clear what component/class the layout file is being used for.
 
 
-#### 1.2.2.1 Drawable Files
+### 1.4 Drawable Files
 
 Drawable resource files should be named using the **ic_** prefix along with the size and color of the asset. For example, white accept icon sized at 24dp would be named:
 
@@ -145,7 +135,7 @@ When creating selector state resources, they should be named using the correspon
 
 Using clear prefixes such as the above helps to make it absolutely obvious as to what a selector state resource is used for.
 
-#### 1.2.2.2 Layout Files
+### 1.5 Layout Files
 
 When naming layout files, they should be named starting with the name of the Android Component that they have been created for. For example:
 
@@ -160,11 +150,11 @@ When naming layout files, they should be named starting with the name of the And
 **Note:** If you create a layout using the merge tag then the layout_ prefix should be used.
 
 
-#### 1.2.2.3 Menu Files
+### 1.6 Menu Files
 
 Menu files do not need to be prefixed with the menu_ prefix. This is because they are already in the menu package in the resources directory, so it is not a requirement.
 
-#### 1.2.2.4 Values Files
+### 1.7 Values Files
 
 Resources should be split up into the following key files and folders:
 
