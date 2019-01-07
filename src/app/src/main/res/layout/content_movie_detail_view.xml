@@ -17,7 +17,7 @@
             android:layout_gravity="bottom"
             android:layout_alignParentTop="true">
 
-        <com.billboard.movies.ui.view.PopularityView
+        <com.billboard.movies.presentation.ui.common.view.PopularityView
                 android:id="@+id/popularityView"
                 android:layout_width="50dp"
                 android:layout_height="50dp"

@@ -37,7 +37,7 @@
                 android:paddingRight="@dimen/margin_x8"
                 android:layout_gravity="bottom">
 
-            <com.billboard.movies.ui.view.PopularityView
+            <com.billboard.movies.presentation.ui.common.view.PopularityView
                     android:id="@+id/popularity"
                     android:layout_width="50dp"
                     android:layout_height="50dp"

@@ -25,7 +25,7 @@
                 app:expandedTitleMarginStart="48dp"
                 app:expandedTitleMarginEnd="64dp">
 
-            <com.billboard.movies.utils.TranslateDraweeView
+            <com.billboard.movies.presentation.utils.TranslateDraweeView
                     android:id="@+id/bannerImageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
