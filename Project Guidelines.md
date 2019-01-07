@@ -6,17 +6,15 @@
 </h3>
 
 ---------------------------
+
 # Project Structure
 
 
 The project should maintain the following structure:
 
-
-
 	src/data
 	src/domain
 	src/presentation
-
 
 ## 1. data
 The data package contains any classes (and child packages) that are directly related to any kind of data or data management used within the app — be it networking classes and interfaces, preferences management, database classes, data models, network request and response model, or anything else directly tied to app data. Within this package we also have child packages that are organized per-type.
@@ -26,7 +24,7 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/repository
 	
 	
-**local** - The local package contains all of the classes that deal with data being persisted locally to the application. 
+### 1.1 **local** - The local package contains all of the classes that deal with data being persisted locally to the application. 
 
 	src/data/local/converter
 	src/data/local/dao
@@ -34,12 +32,12 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/local/entity
 	src/data/local/sharedPreference	
 	
-**remote** - The Remote package contains the implementation for the remote data source.
+### 1.2 **remote** - The Remote package contains the implementation for the remote data source.
 	
 	src/data/remote/model
 	src/data/remote/api
 	
-**repository** - The Repository package contains the classes or components that encapsulate the logic required to access data sources.
+### 1.3 **repository** - The Repository package contains the classes or components that encapsulate the logic required to access data sources.
 
 	
 ## 2. domain
@@ -76,8 +74,9 @@ The presentation package is responsible for holding any classes that are related
 **feature** - The feature package is used to hold any classes related to a feature. Within this package we also have child packages that are organized per-type.
 
 
-# Project Guidelines
 ---------------------------
+
+# Project Guidelines
 
 ## 1. File Naming
 
