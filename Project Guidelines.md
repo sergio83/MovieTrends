@@ -24,7 +24,8 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/repository
 	
 	
-### 1.1 **local** - The local package contains all of the classes that deal with data being persisted locally to the application. 
+### 1.1 **local** - 
+The local package contains all of the classes that deal with data being persisted locally to the application. 
 
 	src/data/local/converter
 	src/data/local/dao
@@ -32,12 +33,14 @@ The data package contains any classes (and child packages) that are directly rel
 	src/data/local/entity
 	src/data/local/sharedPreference	
 	
-### 1.2 **remote** - The Remote package contains the implementation for the remote data source.
+### 1.2 **remote** - 
+The Remote package contains the implementation for the remote data source.
 	
 	src/data/remote/model
 	src/data/remote/api
 	
-### 1.3 **repository** - The Repository package contains the classes or components that encapsulate the logic required to access data sources.
+### 1.3 **repository** - 
+The Repository package contains the classes or components that encapsulate the logic required to access data sources.
 
 	
 ## 2. domain
