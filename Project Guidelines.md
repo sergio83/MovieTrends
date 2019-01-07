@@ -5,9 +5,9 @@
     <img src="art/architecture.png" alt="Architecture" />
 </h3>
 
-
-# Project Structure
 ---------------------------
+# Project Structure
+
 
 The project should maintain the following structure:
 
