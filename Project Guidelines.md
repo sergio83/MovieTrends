@@ -1,9 +1,17 @@
 # Project Architecture
 
+To start, consider the following diagram, which shows how all the modules should interact with one another after designing the app:
 
 <h3 align="center">
     <img src="art/architecture.png" alt="Architecture" />
 </h3>
+
+<hr />
+<h4 align="center">
+  For more details check out the <a href="https://developer.android.com/jetpack/docs/guide">Guide to app architecture</a>
+</h4>
+<hr />
+
 
 ---------------------------
 
