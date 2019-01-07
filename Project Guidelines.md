@@ -1,5 +1,5 @@
 # Project Architecture
----------------------------
+
 
 <h3 align="center">
     <img src="art/architecture.png" alt="Architecture" />
