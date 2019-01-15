@@ -3,6 +3,7 @@
 
 The aim of this document is to define project guidelines. These should be followed throughout the Android project in order to help us to keep our code base clean and consistent.
 
+<img src="art/architecture.png" alt="Architecture">
 
 ## 1. Project Guidelines
 
